@@ -2,7 +2,7 @@ from _pytest.config import directory_arg
 import pytest
 from pytest_check import check
 
-from eliminate_whitespaces import (
+from eliminate_whitespaces.eliminate_whitespaces import (
     eliminate_newlines_after_function_definition_in_file,
     eliminate_newlines_after_function_definition_in_file_or_directory,
     eliminate_newlines_after_function_definition_in_string,
@@ -129,13 +129,17 @@ class TestEliminateNewlinesAfterFunctionDefinitionInFileOrDirectory:
         "code,expected_return_value", [[testcode0, 0], [testcode1, 1], [testcode2, 1]]
     )
     def test_eliminate_newlines_after_function_definition_in_file_or_directory__file(
-        code, expected_return_value, tmp_path,
+        code,
+        expected_return_value,
+        tmp_path,
     ):
         filepath = tmp_path / "testfile.py"
         filepath.write_text(code["original"])
 
-        return_value = eliminate_newlines_after_function_definition_in_file_or_directory(
-            path=filepath
+        return_value = (
+            eliminate_newlines_after_function_definition_in_file_or_directory(
+                path=filepath
+            )
         )
 
         with check:
@@ -159,8 +163,10 @@ class TestEliminateNewlinesAfterFunctionDefinitionInFileOrDirectory:
         for filepath, content in config:
             filepath.write_text(content["original"])
 
-        return_value = eliminate_newlines_after_function_definition_in_file_or_directory(
-            path=directory
+        return_value = (
+            eliminate_newlines_after_function_definition_in_file_or_directory(
+                path=directory
+            )
         )
 
         for filepath, content in config:
@@ -185,8 +191,10 @@ class TestEliminateNewlinesAfterFunctionDefinitionInFileOrDirectory:
         for filepath, content in config:
             filepath.write_text(content["original"])
 
-        return_value = eliminate_newlines_after_function_definition_in_file_or_directory(
-            path=directory
+        return_value = (
+            eliminate_newlines_after_function_definition_in_file_or_directory(
+                path=directory
+            )
         )
 
         for filepath, content in config:

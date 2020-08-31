@@ -13,7 +13,7 @@ setuptools.setup(
     description="CLI that formats Python code in such a way that after the function definition header all newlines will be deleted",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="???",
+    url="https://github.com/PatrikHlobil/Eliminate-Whitespaces-After-Function-Definition",
     packages=["eliminate_whitespaces"],
     install_requires=["click>=7.1.2", "colorama>=0.4.3"],
     classifiers=[

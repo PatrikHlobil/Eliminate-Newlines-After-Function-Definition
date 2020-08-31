@@ -2,7 +2,7 @@ from pathlib import Path
 import sys
 import click
 
-from eliminate_whitespaces import (
+from eliminate_whitespaces.eliminare_whitespaces import (
     eliminate_newlines_after_function_definition_in_file_or_directory,
 )
 
