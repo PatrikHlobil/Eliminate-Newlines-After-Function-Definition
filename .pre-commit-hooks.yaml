@@ -1,0 +1,8 @@
+- id: eliminate_whitespaces
+  name: eliminate_whitespaces
+  description: "This CLI formats Python code in such a way that after the function definition header all newlines will be deleted."
+  entry: eliminate_whitespaces
+  language: python
+  language_version: python3
+  require_serial: true
+  types: [python]
