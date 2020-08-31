@@ -1,0 +1,9 @@
+**/venv/
+**/.vscode/**
+*.pyc
+**/.cache/**
+**/__pycache__
+**/.pytest_cache
+**/.coverage
+**/builds
+*.egg-info
