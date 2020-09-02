@@ -1,4 +1,4 @@
-# Eliminate Whitespaces CLI
+# Eliminate Newlines CLI
 
 This CLI formats Python code in such a way that after the function definition header all newlines will be deleted.
 
