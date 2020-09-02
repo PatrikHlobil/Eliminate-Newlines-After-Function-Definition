@@ -38,15 +38,15 @@ class A:
 
 **Reformat file:**
 
-    eliminate_whitespaces testfile.py
+    eliminate_newlines testfile.py
 
 **Reformat folder (recursively):**
 
-    eliminate_whitespaces /path/to/testfolder
+    eliminate_newlines /path/to/testfolder
 
 **Check mode:**
 
-    eliminate_whitespaces testfile.py --check
+    eliminate_newlines testfile.py --check
 
 **Return Codes**
 
@@ -59,11 +59,11 @@ Return code 123 means there was an internal error.
 
 ## CLI Documentation:
 
-    eliminate_whitespaces --help
+    eliminate_newlines --help
 
 
 ```
-Usage: eliminate_whitespaces [OPTIONS] PATH
+Usage: eliminate_newlines [OPTIONS] PATH
 
   This CLI formats Python code in such a way that after the function
   definition  header all newlines will be deleted.

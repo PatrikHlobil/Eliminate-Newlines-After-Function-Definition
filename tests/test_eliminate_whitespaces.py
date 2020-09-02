@@ -2,7 +2,7 @@ from _pytest.config import directory_arg
 import pytest
 from pytest_check import check
 
-from eliminate_whitespaces.eliminate_whitespaces import (
+from eliminate_newlines.core import (
     eliminate_newlines_after_function_definition_in_file,
     eliminate_newlines_after_function_definition_in_file_or_directory,
     eliminate_newlines_after_function_definition_in_string,

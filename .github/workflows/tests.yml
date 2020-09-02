@@ -31,4 +31,4 @@ jobs:
         pip install tests -r tests/requirements.txt
     - name: Test with pytest
       run: |
-        pytest --cov-report term-missing --cov=eliminate_whitespaces tests/
+        pytest --cov-report term-missing --cov=eliminate_newlines tests/

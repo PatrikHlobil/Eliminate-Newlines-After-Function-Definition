@@ -6,12 +6,12 @@ import click
 
 
 def eliminate_newlines_after_function_definition_in_string(code: str) -> str:
-    """Eliminates all newlines after the function definition in a string, e.g. 
-    
+    """Eliminates all newlines after the function definition in a string, e.g.
+
     def foo(a):
-        
+
         return a + 1
-    
+
     will become:
 
     def foo(a):
@@ -28,12 +28,12 @@ def eliminate_newlines_after_function_definition_in_string(code: str) -> str:
 def eliminate_newlines_after_function_definition_in_file(
     path: Path, check: bool = False
 ) -> bool:
-    """Eliminates all newlines after the function definition in a file, e.g. 
-    
+    """Eliminates all newlines after the function definition in a file, e.g.
+
     def foo(a):
-        
+
         return a + 1
-    
+
     will become:
 
     def foo(a):
@@ -70,12 +70,12 @@ def eliminate_newlines_after_function_definition_in_file_or_directory(
     path: Path, check: bool = False
 ) -> bool:
     """Eliminates all newlines after the function definition in either a file or a
-    directory (recursively in this case), e.g. 
-    
+    directory (recursively in this case), e.g.
+
     def foo(a):
-        
+
         return a + 1
-    
+
     will become:
 
     def foo(a):
