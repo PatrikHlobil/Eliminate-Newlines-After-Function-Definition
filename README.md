@@ -66,14 +66,14 @@ Return code 123 means there was an internal error.
 Usage: eliminate_newlines [OPTIONS] PATH
 
   This CLI formats Python code in such a way that after the function
-  definition  header all newlines will be deleted.
+  definition header all newlines will be deleted.
 
   Return code 0 means nothing would change.  Return code 1 means some files
   would be reformatted. Return code 123 means there was an internal error.""
   pass.
 
-  Passed PATH can be either a file or a directory. In the latter case, all
-  files in the folder will be formatted recursively.
+  Passed PATHS can be either filea or directories. In the latter case, all
+  files in the folders will be formatted recursively.
 
 Options:
   --check  Don't write the files back, just return the status.
