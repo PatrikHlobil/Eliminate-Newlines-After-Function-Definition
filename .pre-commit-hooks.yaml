@@ -1,8 +1,9 @@
 - id: eliminate_newlines
   name: eliminate_newlines
   description: "This CLI formats Python code in such a way that after the function definition header all newlines will be deleted."
-  entry: eliminate_newlines
+  entry: eliminate_newlines --help
   language: python
   language_version: python3
   require_serial: true
+  pass_filenames: false
   types: [python]
